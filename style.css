@@ -1,8 +1,8 @@
 body {
-    background: rgb(69, 179, 252);
+    background: rgb(138, 200, 241);
   }
 
-#star{
+#castle{
   display: block;
   margin-left: auto;    
   margin-right: auto;
@@ -11,5 +11,17 @@ body {
 
 .center {
   text-align: center;
-  border: 3px solid blue;
+  font-size: 60px;
+  font-family: fantasy, copperplate, sans-serif;
+}
+.info {
+  text-align: center;
+  font-size: 30px;
+  font-family: fantasy, copperplate, sans-serif;
+}
+
+
+
+.tabs {
+  text-align: center;
 }
