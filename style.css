@@ -1,6 +1,13 @@
 body {
     background: rgb(138, 200, 241);
   }
+  
+.mysection {
+    background-color: rgba(0, 4, 255, 0.76);
+    width: 100%;
+    height: 10px;
+ }
+
 
 .castle header{
   text-align: center;
@@ -32,13 +39,19 @@ body {
 
 .center {
   color: #fff;
+  text-shadow: 2px 2px 4px #000000;
   text-align: center;
   font-size: 40px;
   font-family: fantasy, copperplate, sans-serif;
+  /* background-color: rgba(4, 138, 247, 0.726);
+    width: 100%;
+    height: 55px;
+    box-shadow: 5px 5px; */
 }
+
 .info {
-  color: #fff;
-  text-shadow:rgb(0, 93, 155);
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px #000000;
   text-align: center;
   font-size: 25px;
   font-family: fantasy, luminaricopperplateli, sans-serif;
@@ -46,11 +59,6 @@ body {
 
 .tabs {
   text-align: center;
-}
-
-form {
-  width: 450px;
-  margin: 0 auto 50px auto;
 }
 
 
@@ -63,15 +71,4 @@ form {
   font-family: fantasy, copperplate, sans-serif;
   
   
-}
-
-form button[type="submit"] {
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #f1a458;
-  color: #fff;
-  padding: 7px 10px;
-  cursor: pointer;
 }

@@ -19,10 +19,10 @@ return response.json()
   const answer = getRandomInt(49)
   const opOne = getRandomInt(49)
   const opTwo = getRandomInt(49)
-  console.log(keys[opOne])
-  console.log(keys[opTwo])
-  console.log(keys[answer])
-  console.log(namesToImageObj[keys[answer]])
+  // console.log(keys[opOne])
+  // console.log(keys[opTwo])
+  // console.log(keys[answer])
+  // console.log(namesToImageObj[keys[answer]])
  
   const placeImage = document.querySelector("#target")
   let imageTarget= document.createElement("img")
@@ -32,24 +32,42 @@ return response.json()
 
   placeImage.append(imageTarget)
 
-  const placeAnswer = document.querySelector(".questions")
+  const placeAnswer = document.querySelector(".questions2")
+  
   let ans = document.createElement("button")
   ans.textContent = keys[answer]
   ans.onclick = function(){ans.style.background='#00FF00'}
 
-  // const placeAnswerOpOne = document.querySelector(".questions")
+  
   let ansOpOne = document.createElement("button")
   ansOpOne.textContent = keys[opOne]
   ansOpOne.onclick = function(){ansOpOne.style.background='#FF0000'}
 
-  // const placeAnswerOpTwo = document.querySelector(".questions")
+  
   let ansOpTwo = document.createElement("button")
   ansOpTwo.textContent = keys[opTwo]
   ansOpTwo.onclick = function(){ansOpTwo.style.background='#FF0000'}
   
   placeAnswer.append(ansOpOne, ans, ansOpTwo)
+
+  const hoverTitle = document.querySelector(".center")
+  const theTitle = document.createElement("h1")
+  theTitle.textContent = "Welcome to The Disney Character Quiz"
+  theTitle.classList = "center"
+  
+  const mouseOverFuntion = function(){
+    this.style.color = "#00008B"
+  }
+  const mouseOutFunction = function(){
+    this.style.color = "#fff"
+  }
+  theTitle.onmouseover = mouseOverFuntion
+  theTitle.onmouseout = mouseOutFunction
+  hoverTitle.append(theTitle)
 })
  
+
+
 
 
   // const characters = arrayOfCharacters.data
@@ -86,9 +104,9 @@ return response.json()
 
 
 
-                function getRandomInt(max) {
-                  return Math.floor(Math.random() * max);
-                }
+                // function getRandomInt(max) {
+                //   return Math.floor(Math.random() * max);
+                // }
 
 // let button = document.createElement("button")
 // button.innerHTML = "Next Question"
