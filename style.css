@@ -2,26 +2,76 @@ body {
     background: rgb(138, 200, 241);
   }
 
-#castle{
-  display: block;
-  margin-left: auto;    
-  margin-right: auto;
-  width: 50%;
-}
-
-.center {
+.castle header{
   text-align: center;
   font-size: 60px;
   font-family: fantasy, copperplate, sans-serif;
 }
-.info {
+
+#castle{
+  display: block;
+  margin-left: auto;    
+  margin-right: auto;
+  height: auto;
+  width: 30%;
+}
+
+.questions  {
+  color: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-family: fantasy, copperplate, sans-serif;
 }
 
+.questions2  {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  font-family: fantasy, copperplate, sans-serif;
+}
 
+.center {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-family: fantasy, copperplate, sans-serif;
+}
+.info {
+  color: #fff;
+  text-shadow:rgb(0, 93, 155);
+  text-align: center;
+  font-size: 25px;
+  font-family: fantasy, luminaricopperplateli, sans-serif;
+}
 
 .tabs {
   text-align: center;
+}
+
+form {
+  width: 450px;
+  margin: 0 auto 50px auto;
+}
+
+
+.button {
+  background-color: rgb(216, 199, 199);
+  text-align: center;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 8px;
+  font-family: fantasy, copperplate, sans-serif;
+  
+  
+}
+
+form button[type="submit"] {
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f1a458;
+  color: #fff;
+  padding: 7px 10px;
+  cursor: pointer;
 }
