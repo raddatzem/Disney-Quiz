@@ -1,52 +1,39 @@
 body {
-    background: rgb(138, 200, 241);
+    background: rgb(21, 207, 253);
   }
-  
-.mysection {
-    background-color: rgba(0, 4, 255, 0.76);
-    width: 100%;
-    height: 10px;
- }
-
-
-.castle header{
-  text-align: center;
-  font-size: 60px;
-  font-family: fantasy, copperplate, sans-serif;
-}
 
 #castle{
   display: block;
   margin-left: auto;    
   margin-right: auto;
   height: auto;
-  width: 30%;
+  width: 100%;
+}
+
+#character{
+  display: block;
+  margin-left: auto;    
+  margin-right: auto;
+  height: auto;
+  width: 40%;
 }
 
 .questions  {
   color: #fff;
   text-align: center;
-  font-size: 25px;
-  font-family: fantasy, copperplate, sans-serif;
 }
 
 .questions2  {
   color: #fff;
   text-align: center;
-  font-size: 15px;
-  font-family: fantasy, copperplate, sans-serif;
 }
 
 .center {
   color: #fff;
   text-shadow: 2px 2px 4px #000000;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   font-family: fantasy, copperplate, sans-serif;
-  /* background-color: rgba(4, 138, 247, 0.726);
-    width: 100%;
-    height: 55px;
-    box-shadow: 5px 5px; */
 }
 
 .info {
@@ -61,14 +48,104 @@ body {
   text-align: center;
 }
 
-
-.button {
-  background-color: rgb(216, 199, 199);
+.button-51 {
+  background-color: transparent;
   text-align: center;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
   font-size: 20px;
-  border-radius: 12px;
-  box-shadow: 8px;
-  font-family: fantasy, copperplate, sans-serif;
-  
-  
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
+
+
+
+.button-52 {
+  background-color: transparent;
+  text-align: center;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:hover,
+.button-52:active {
+  outline: 0;
+}
+
+.button-52:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-52:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-52:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 16px 32px;
+  }
 }

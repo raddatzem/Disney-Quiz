@@ -16,9 +16,9 @@ return response.json()
 })  
 .then(function(){
   const keys = Object.keys(namesToImageObj)
-  const answer = getRandomInt(49)
-  const opOne = getRandomInt(49)
-  const opTwo = getRandomInt(49)
+  const answer = getRandomInt(50)
+  const opOne = getRandomInt(50)
+  const opTwo = getRandomInt(50)
   // console.log(keys[opOne])
   // console.log(keys[opTwo])
   // console.log(keys[answer])
@@ -27,8 +27,8 @@ return response.json()
   const placeImage = document.querySelector("#target")
   let imageTarget= document.createElement("img")
   imageTarget.src = namesToImageObj[keys[answer]]
-  imageTarget.alt = ``
-  imageTarget.id = "castle" 
+  imageTarget.alt = `disney characters image`
+  imageTarget.id = "character" 
 
   placeImage.append(imageTarget)
 
@@ -36,24 +36,33 @@ return response.json()
   
   let ans = document.createElement("button")
   ans.textContent = keys[answer]
+  ans.classList = "button-52"
   ans.onclick = function(){ans.style.background='#00FF00'}
 
   
   let ansOpOne = document.createElement("button")
   ansOpOne.textContent = keys[opOne]
+  ansOpOne.classList = "button-52"
   ansOpOne.onclick = function(){ansOpOne.style.background='#FF0000'}
 
   
   let ansOpTwo = document.createElement("button")
   ansOpTwo.textContent = keys[opTwo]
+  ansOpTwo.classList = "button-52"
   ansOpTwo.onclick = function(){ansOpTwo.style.background='#FF0000'}
   
+
   placeAnswer.append(ansOpOne, ans, ansOpTwo)
 
   const hoverTitle = document.querySelector(".center")
-  const theTitle = document.createElement("h1")
-  theTitle.textContent = "Welcome to The Disney Character Quiz"
+  const theTitle = document.createElement("h2")
+  theTitle.textContent = "Welcome to The Disney Character Quiz! "
   theTitle.classList = "center"
+ 
+  const theDirections = document.createElement("h3")
+  theDirections.textContent = "Match the characters name to its image below"
+  theDirections.classList = "center"
+
   
   const mouseOverFuntion = function(){
     this.style.color = "#00008B"
@@ -63,67 +72,16 @@ return response.json()
   }
   theTitle.onmouseover = mouseOverFuntion
   theTitle.onmouseout = mouseOutFunction
-  hoverTitle.append(theTitle)
+  theDirections.onmouseover = mouseOverFuntion
+  theDirections.onmouseout = mouseOutFunction
+  hoverTitle.append(theTitle, theDirections)
+
+  function refreshPage(){
+    window.location.reload();
+} 
+const refreshButton = document.querySelector(".button-51")
+refreshButton.textContent = "Next Question"
+refreshButton.onclick = refreshPage
+refreshButton.classList = "button-51"
 })
  
-
-
-
-
-  // const characters = arrayOfCharacters.data
-
-  // const placeImage = document.querySelector("#target")
-  // imageTarget= document.createElement("img")
-  // imageTarget.src = characters[0].imageUrl
-  // imageTarget.alt = ``
-  // imageTarget.id = "castle" 
-
- 
-
-
-  // const answerArea = document.querySelector("h2")
-  //   answerArea.textContent = 
-
-
-
-
-// const q = document.createElement("p");
-// q.textContent = "";
-// document.querySelector("body").appendChild(q);
-
-// const a = document.createElement("p");
-// a.textContent = "";
-// document.querySelector("body").appendChild(a);
-
-
-// const myList = [
-  // [characters[0].imageUrl],    //[0][0], [0][1] 
-  // [characters[1].imageUrl],    //[1][0], [1][1]
-  // [characters[2].imageUrl],    //[2][0], [2][1]
-  // [characters[3].imageUrl]]    //[3][0], [3][1]
-
-
-
-                // function getRandomInt(max) {
-                //   return Math.floor(Math.random() * max);
-                // }
-
-// let button = document.createElement("button")
-// button.innerHTML = "Next Question"
-// button.classList = "button"
-// button.onclick =()=>{
-//     let i = getRandomInt(myList.length)
-//     q.textContent = myList[i][0];
-//     a.textContent = myList[i][1];
-// }
-// document.querySelector("body").appendChild(button)
-
-
-  
-
-
-
-
-// createQuestion("what color are Mickeys shorts", "red")
-// createQuestion("how old is the castle", "50")
-// createQuestion("top grossing disney film", "Spiderman")
